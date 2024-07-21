@@ -50,7 +50,7 @@ const App = () => {
     if (searchQuery !== '') {
       fetchImages();
     }
-  }, [searchQuery, currentPage]);
+  });
 
   const handleSearchSubmit = query => {
     setSearchQuery(query);
