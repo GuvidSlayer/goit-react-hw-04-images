@@ -5,7 +5,6 @@ import ImageGallery from './ImageGallery/ImageGallery.jsx';
 import Loader from './Loader/Loader.jsx';
 import Button from './Button/Button.jsx';
 import Modal from './Modal/Modal.jsx';
-import '../index.css';
 import Notiflix from 'notiflix';
 import * as basicLightbox from 'basiclightbox';
 import 'basiclightbox/dist/basicLightbox.min.css';
@@ -51,7 +50,7 @@ const App = () => {
     if (searchQuery !== '') {
       fetchImages();
     }
-  }, [searchQuery]);
+  }, [searchQuery, currentPage]);
 
   const handleSearchSubmit = query => {
     setSearchQuery(query);
